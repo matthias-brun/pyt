@@ -187,7 +187,7 @@ class LabelVisitor(ast.NodeVisitor):
                 for d in node.dims:
                     self.visit(d)
         else:
-            self.visit(node.value)
+            self.visit(node)
 
     #  operator = Add | Sub | Mult | MatMult | Div | Mod | Pow | LShift | RShift | BitOr | BitXor | BitAnd | FloorDiv
     def visit_Add(self, node):
